@@ -1,0 +1,159 @@
+/* variables */
+:root{
+    --color-primario:#FB8F1D
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid lightgray;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    background-color:rgb(60, 60, 180);
+    display: flex;    
+    justify-content: center;
+    min-width: 960px;
+}
+nav>a{
+    height: 32px;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    color: white;    
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 6px;   
+}
+.active{
+    background-color: rgb(60, 60, 120);
+    border: 1px solid rgb(0,0,240);
+}
+header{
+    text-align: center;
+    color: rgb(160, 160, 160);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;    
+    padding-top: 10px;
+    min-width: 960px;
+}
+main{
+    margin: 0 auto;
+    max-width: 1050px;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    min-width: 960px;   
+}
+article{
+    margin: 20px 0;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow: 8px 8px 8px rgb(220, 220, 220);
+}
+.product{
+    width: 300px;
+    height: 420px;
+    text-align: center;
+    position: relative;
+}
+.product-img{
+    width: 300px;
+    height: 200px;      
+}
+.product-content{
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.product-content-title{
+    font-weight: bold;      
+}
+.product-content-description{
+    font-size: 12px;
+    color: rgb(90, 90, 90);
+}
+.product-detail{
+    width: 300px;
+    min-height: 48px;
+    position: absolute;
+    bottom: 48px;    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.product-detail>span{
+    background-color: rgb(230, 230, 230);    
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 5px;
+    border-radius: 12px;
+}
+.product-detail-precio{
+    width: 120px;
+}
+.product-detail-stock{
+    width: 80px;
+}
+.product-buy{
+    width: 300px;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(20, 150, 160);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-buy-verify{    
+    height: 30px;
+}
+.product-buy-add{
+    width: 240px;
+    height: 48px;
+    background-color: rgb(20, 150, 160);
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+}
+/* ----------------------------------------------------- */
+@media screen and (max-width:900px) {    
+    nav{
+        min-width: 660px;
+    }
+    header{
+        min-width: 660px;
+    }
+    main{
+        max-width: 750px;
+        /* background-color: rebeccapurple; */
+    }
+    section{
+        min-width: 660px;
+    }
+}
+@media screen and (max-width:480px) {   
+    nav{
+        flex-direction: column;
+        min-width: 340px;
+    }
+    nav>a{
+        width: 100%;
+    }
+    header{
+        min-width: 340px;
+    }
+    main{
+        max-width: 450px;
+    }
+    section{
+        min-width: 340px;
+    }
+}
