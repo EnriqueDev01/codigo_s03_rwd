@@ -116,10 +116,12 @@ article{
     height: 30px;
 }
 .product-buy-add{
+    text-decoration: none;
     width: 240px;
     height: 48px;
     background-color: rgb(20, 150, 160);
     color: white;
+    font-size: 14px;
     font-weight: bold;
     padding: 12px;
 }
